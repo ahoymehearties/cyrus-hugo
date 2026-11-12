@@ -2,12 +2,12 @@
   YARN_VERSION = "1.22.22"
   NPM_VERSION = "6.4.1"
   HUGO_VERSION = "0.55.6"
-  NODE_VERSION = "16"
+  NODE_VERSION = "18"
 
 [build]
   command = "yarn build"
   publish = "dist"
-  environment = { NODE_VERSION = "16" }
+  environment = { NODE_VERSION = "18" }
 
 [context.deploy-preview]
   command = "yarn build:preview"
